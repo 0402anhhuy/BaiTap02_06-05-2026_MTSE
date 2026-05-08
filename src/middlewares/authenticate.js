@@ -26,8 +26,6 @@ export const authenticate = (req, res, next) => {
 /**
  * Middleware phân quyền theo role.
  * Dùng sau authenticate.
- *
- * Ví dụ: authorize('admin') hoặc authorize('user', 'admin')
  */
 export const authorize =
     (...roles) =>
